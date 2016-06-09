@@ -4,9 +4,9 @@
   "description": "Línea de tiempo que describe la evolución histórica de la informática",
   "main": "src/index.html",
   "scripts": {
-    "start:linux": "xdg-open /src/index.html",
-    "start:mac": "open /src/index.html",
-    "start:win": "start /src/index.html",
+    "start:linux": "xdg-open ./src/index.html",
+    "start:mac": "open ./src/index.html",
+    "start:win": "start ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

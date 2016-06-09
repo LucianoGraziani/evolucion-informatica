@@ -8,4 +8,4 @@ Final de `Aspectos Legales, Profesionales y Sociales de la Informática` de la c
 - Guarden todos las referencias a documentos externos.
 
 # Modo de uso
-Ejecutar `npm start:{win|mac|linux}` (una de esas tres opciones) y se abrirá la página en el explorador.
+Ejecutar `npm run start:{win|mac|linux}` (una de esas tres opciones) y se abrirá la página en el explorador. Por ejemplo: `npm run start:win`.
