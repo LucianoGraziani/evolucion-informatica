@@ -1,0 +1,20 @@
+{
+  "name": "evolucion-informatica",
+  "version": "0.3.0",
+  "description": "Línea de tiempo que describe la evolución histórica de la informática",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timelinejs",
+    "linea",
+    "de",
+    "tiempo",
+    "evolucion",
+    "historia",
+    "informatica"
+  ],
+  "author": "Luciano Graziani <lgraziani@unrn.edu.ar>",
+  "license": "MIT"
+}
