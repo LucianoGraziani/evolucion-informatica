@@ -2,4 +2,5 @@
 - [ ] Hacer que la línea de tiempo se pueda ocultar o mostrar en dispositivos de pantallas chicas. Tiene que poder ser ocultable al arrastrarla hacia abajo con el mouse o con el dedo, y debe poder mostrarse si se arrastra hacia arriba desde el borde inferior (con el mouse o el dedo).
 - [ ] Dejar de usar la planilla de cálculos para los datos y generar un JSON adecuado.
 - [ ] ¿Descargar todas las imágenes y los videos de forma que la aplicación no dependa de internet?
+- [ ] Deploy en Heroku.
 - [x] Crear el proyecto base con el cual deployar la aplicación.
