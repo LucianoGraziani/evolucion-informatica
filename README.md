@@ -8,4 +8,9 @@ Final de `Aspectos Legales, Profesionales y Sociales de la Informática` de la c
 - Guarden todos las referencias a documentos externos.
 
 # Modo de uso
+
+## Con NodeJS instalado
 Ejecutar `npm run start:{win|mac|linux}` (una de esas tres opciones) y se abrirá la página en el explorador. Por ejemplo: `npm run start:win`.
+
+## Sin NodeJS instalado
+Abrir el archivo `src/index.html`.

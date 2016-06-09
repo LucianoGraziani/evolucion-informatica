@@ -3,4 +3,5 @@
 - [ ] Dejar de usar la planilla de cálculos para los datos y generar un JSON adecuado.
 - [ ] ¿Descargar todas las imágenes y los videos de forma que la aplicación no dependa de internet?
 - [ ] Deploy en Heroku.
+- [ ] Que el F1 muestre las opciones de manejo de la aplicación.
 - [x] Crear el proyecto base con el cual deployar la aplicación.
