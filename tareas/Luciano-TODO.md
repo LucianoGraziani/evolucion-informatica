@@ -1,0 +1,1 @@
+- [ ] Buscar información sobre robótica e inteligencia artificial.
