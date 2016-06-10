@@ -1,20 +1,14 @@
-/**
- * TODO requestFullScreen for all explorers.
- */
-
-document.cancelFullScreen = document.cancelFullScreen || document.webkitCancelFullScreen || document.mozCancelFullScreen;
-
 document.onkeydown = checkKey;
 
 function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '70') {
-        if (document.fullScreen || document.webkitIsFullScreen || document.mozFullScreen) {
-            document.cancelFullScreen();
+        if (document.fullscreenElement) {
+            document.exitFullscreen();
             return;
         }
-        document.getElementById('timeline-embed').webkitRequestFullScreen();
+        document.getElementById('timeline-embed').requestFullscreen();
     } else if (e.keyCode == '37') {
         // left arrow
         timeline.goToPrev();
