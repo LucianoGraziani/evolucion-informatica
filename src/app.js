@@ -6,7 +6,7 @@ var options = {
 $(document).ready(function() {
 	var embed = document.getElementById('timeline-embed');
 	embed.style.height = getComputedStyle(document.body).height;
-	window.timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1rwkC4c4TKmhKht15tUd1gLOEthZG0hfQlwEEA8sjZOE/pubhtml', options);
+	window.timeline = new TL.Timeline('timeline-embed', /*'https://docs.google.com/spreadsheets/d/1qMes6fK0yVojJtiGmYLTgF1EE-wMWR35PaZjeFRUW0A/pubhtml'*/window.startSlideContent(), options);
 
 	///////////////////
 	// Resize Event
@@ -17,5 +17,5 @@ $(document).ready(function() {
 		timeline.updateDisplay();
 	});
 
-	window.timelineEvents();
+	window.mouseEvents(jQuery);
 });
