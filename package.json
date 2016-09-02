@@ -1,6 +1,6 @@
 {
   "name": "evolucion-informatica",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Línea de tiempo que describe la evolución histórica de la informática",
   "main": "src/index.html",
   "scripts": {

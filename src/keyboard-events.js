@@ -15,13 +15,13 @@ function checkKey(e) {
 	} else if (e.keyCode == '37') {
 		// left arrow
 		stopYoutube();
-		returnSlice();
+		// returnSlice();
 		timeline.goToPrev();
 		fullScreenVideo();
 	} else if (e.keyCode == '39') {
 		// right arrow
 		stopYoutube();
-		advanceSlice();
+		// advanceSlice();
 		timeline.goToNext();
 		fullScreenVideo();
 	}
