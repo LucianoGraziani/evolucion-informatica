@@ -39,3 +39,4 @@
 - [x] Deploy en github-pages.
 - [ ] Que el F1 muestre las opciones de manejo de la aplicación.
 - [x] Crear el proyecto base con el cual deployar la aplicación.
+- ¿Hacer la APP con React y https://github.com/Lighthouse-io/react-visjs-timeline?

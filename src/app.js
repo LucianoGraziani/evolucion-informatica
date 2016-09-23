@@ -1,5 +1,5 @@
 var options = {
-	hash_bookmark: true,
+	hash_bookmark: false,
 	initial_zoom: 5,
 	language: 'es',
 };

@@ -13,7 +13,7 @@ utils.fullScreenVideo = function fullScreenVideo() {
 	var slide = slide ? slide : timeline.getCurrentSlide();
 	var media = slide._media;
 
-	if (media === null || media.data.mediatype.type !== 'youtube') {
+	if (media === null || media.data.mediatype.type !== 'youtube' || !media.player.getIframe) {
 		return;
 	}
 	var iframe = media.player.getIframe();
