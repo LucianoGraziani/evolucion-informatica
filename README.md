@@ -37,6 +37,9 @@ Dentro del campo de texto de cada hito en la planilla de cálculo se debe agrega
   <li><a role="button" class="tag inteligencia-artificial">Inteligencia Artificial</a></li>
 ```
 ```html
+<li><a role="button" class="tag robotica">Robótica</a></li>
+```
+```html
   <li><a role="button" class="tag hardware">Hardware</a></li>
 ```
 ```html
@@ -56,9 +59,6 @@ Dentro del campo de texto de cada hito en la planilla de cálculo se debe agrega
 ```
 ```html
   <li><a role="button" class="tag telecomunicaciones">Telecomunicaciones</a></li>
-```
-```html
-  <li><a role="button" class="tag robotica">Robotica</a></li>
 ```
 ```html
   <li><a role="button" class="tag redes-sociales">Redes Sociales</a></li>
