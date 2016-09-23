@@ -155,6 +155,18 @@ a.inteligencia-artificial {
 	border-color: #46B8DA;
 }
 
+a.robotica {
+	color: #FFF;
+	background-color: #FBC02D;
+	border-color: #F9A825;
+}
+
+a.automata {
+	color: #FFF;
+	background-color: #ff001f;
+	border-color: #f1001d;
+}
+
 a.hardware {
 	color: #FFF;
 	background-color: #5CB85C;
@@ -195,12 +207,6 @@ a.telecomunicaciones {
 	color: #FFF;
 	background-color: #4DB6AC;
 	border-color: #26A69A;
-}
-
-a.robotica {
-	color: #FFF;
-	background-color: #FBC02D;
-	border-color: #F9A825;
 }
 
 a.redes-sociales {

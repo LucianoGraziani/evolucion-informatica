@@ -26,43 +26,59 @@ Abrir el archivo `src/index.html`.
 ## ¿Cómo agregar etiquetas a las diapositivas?
 
 Dentro del campo de texto de cada hito en la planilla de cálculo se debe agregar al final, lo siguiente:
+
 ```html
 <ul id="tags-temas">
-	<!-- Aquí dentro van las etiquetas -->
+  <!-- Aquí dentro van las etiquetas -->
 </ul>
 ```
 
 ### Tipos de etiquetas
+
 ```html
   <li><a role="button" class="tag inteligencia-artificial">Inteligencia Artificial</a></li>
 ```
+
 ```html
-<li><a role="button" class="tag robotica">Robótica</a></li>
+  <li><a role="button" class="tag robotica">Robótica</a></li>
 ```
+
+```html
+  <li><a role="button" class="tag automata">Autómata</a></li>
+```
+
 ```html
   <li><a role="button" class="tag hardware">Hardware</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag software">Software</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag e-commmerce">E-commmerce</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag internet">Internet</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag bases-de-datos">Bases de Datos</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag data-mining">Data Mining</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag telecomunicaciones">Telecomunicaciones</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag redes-sociales">Redes Sociales</a></li>
 ```
+
 ```html
   <li><a role="button" class="tag empresas">Empresas</a></li>
 ```
