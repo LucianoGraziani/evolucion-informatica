@@ -220,6 +220,37 @@ a.empresas {
 	background-color: #F9A825;
 	border-color: #F57F17;
 }
+
+a.criptografia { 
+	color: #FFF; 
+	background-color: #BDB76B; 
+	border-color: #ADB76B; 
+}
+
+a.big-data { 
+	color: #FFF; 
+	background-color: #A0522D; 
+	border-color: #80522D; 
+}
+
+a.data-warehouse { 
+	color: #FFF; 
+	background-color: #708090; 
+	border-color: #608090; 
+}
+
+a.business-inteligence { 
+	color: #FFF; 
+	background-color: #008080; 
+	border-color: #007080; 
+}
+
+a.firma-digital { 
+	color: #FFF; 
+	background-color: #4B0082;
+	border-color: #3B0082; 
+}
+
 /* !-- FIN de las clases para los temas -- */
 #tags-temas {
 	margin: 0;
