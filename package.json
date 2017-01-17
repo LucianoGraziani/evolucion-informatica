@@ -4,7 +4,8 @@
   "private": true,
   "description": "Evolución histórica de la informática",
   "scripts": {
-    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
+    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress",
+    "build": "webpack -p"
   },
   "keywords": [
     "timelinejs",

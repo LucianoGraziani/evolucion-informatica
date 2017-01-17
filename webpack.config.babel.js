@@ -5,7 +5,7 @@ export default {
   output: {
     path: `${__dirname}/build`,
     publicPath: '/build/',
-    filename: 'bundle.js',
+    filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle.[chunkhash].js',
   },
 
   module: {
