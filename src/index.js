@@ -11,7 +11,7 @@ import RoboticaIA from './components/RoboticaIA';
 import PageNotFound from './components/PageNotFound';
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={App}>
+  <Route path="/evolucion-informatica/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
 
     <Route path="robotica-ia" mapMenuTitle="Robótica - IA" component={RoboticaIA} />
