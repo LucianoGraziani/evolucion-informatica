@@ -1,13 +1,10 @@
 {
-  "name": "evolucion-informatica",
-  "version": "1.0.0",
-  "description": "Línea de tiempo que describe la evolución histórica de la informática",
-  "main": "src/index.html",
+  "name": "spa-github-pages",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Evolución histórica de la informática",
   "scripts": {
-    "start:linux": "xdg-open ./src/index.html",
-    "start:mac": "open ./src/index.html",
-    "start:win": "start ./src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
   },
   "keywords": [
     "timelinejs",
@@ -18,6 +15,34 @@
     "historia",
     "informatica"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoGraziani/evolucion-informatica.git"
+  },
   "author": "Luciano Graziani <lgraziani@unrn.edu.ar>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fullscreen-api-polyfill": "^1.1.2",
+    "jquery": "^3.1.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-interactive": "^0.4.0",
+    "react-router": "^3.0.0",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
 }

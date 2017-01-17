@@ -4,14 +4,7 @@ html {
 	margin: 0;
 	padding: 0;
 }
-/*
-	TimelineJS - ver. 3.3.16 - 2016-05-31
-	Copyright (c) 2012-2016 Northwestern University
-	a project of the Northwestern University Knight Lab, originally created by Zach Wise
-	https://github.com/NUKnightLab/TimelineJS3
-	This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
-	If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
-*/
+
 @import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700|Abril+Fatface);
 
 .tl-timeline {
@@ -137,6 +130,7 @@ input[type="text"].editor-headline {
 	line-height: 46px;
 }
 
+/* Estilos para las etiquetas. */
 .tags {
 	list-style: none;
 	margin: 0;
@@ -147,7 +141,7 @@ input[type="text"].editor-headline {
 .tags li {
 	float: left;
 }
-/* Estilos para las etiquetas. */
+
 /* -- Clases para cada tema -- */
 a.inteligencia-artificial {
 	color: #FFF;
