@@ -3,6 +3,7 @@ import { Link as RouterLink } from 'react-router';
 import styled, { css } from 'styled-components';
 
 import Root from './Root';
+import getRepoUrl from '../helpers/getRepoUrl';
 import { Parragraph, code } from './SimpleStyledComponents';
 
 const CreditLine = styled.div`
@@ -60,12 +61,12 @@ function Home() {
       </Parragraph>
       <PageLinkContainer>
         <StyledRouterLink
-          to="/example"
+          to={getRepoUrl('example')}
         >Example page</StyledRouterLink>
       </PageLinkContainer>
       <PageLinkContainer>
         <StyledRouterLink
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
+          to={getRepoUrl('example/two-deep?field1=foo&field2=bar#boom!')}
         >Example two deep with query and hash</StyledRouterLink>
       </PageLinkContainer>
       <CreditLine>
