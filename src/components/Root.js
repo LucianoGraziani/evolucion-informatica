@@ -1,11 +1,23 @@
 import styled from 'styled-components';
 
-const Root = styled.div`
+export const MainTitle = styled.h1`
+  font-size: 28px;
+  margin-bottom: 0.5vh;
+  text-align: center;
+  color: palevioletred;
+`;
+export const MainRoot = styled.div`
+  display: inline-flex;
+  min-height: 100%;
+  min-width: 100%;
+  background: ${props => (props.home ? 'papayawhip' : 'inherit')}
+`;
+export const Root = styled.div`
   font-family: helvetica neue, helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.025em;
-  padding: 3vh 0 12vh 0;
+  padding: 6vh 0 6vh 0;
   width: 500px;
   ${''/*
     use responsive max-width to simulate
@@ -30,5 +42,3 @@ const Root = styled.div`
 
   text-size-adjust: none;
 `;
-
-export default Root;

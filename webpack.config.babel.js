@@ -1,7 +1,13 @@
 import fs from 'fs';
 import webpack from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import { version } from './package.json';
 
+const plugins = [
+  new webpack.DefinePlugin({
+    __VERSION__: JSON.stringify(version),
+  }),
+];
 export default {
   entry: `${__dirname}/src/index.js`,
   output: {
@@ -20,7 +26,8 @@ export default {
     extensions: ['', '.js', '.jsx'],
   },
 
-  plugins: process.argv.indexOf('-p') === -1 ? null : [
+  plugins: process.argv.indexOf('-p') === -1 ? plugins : [
+    ...plugins,
     new CleanWebpackPlugin(['build'], {
       root: __dirname,
       verbose: false,

@@ -1,76 +1,53 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import Root from './Root';
+import { Root, MainTitle } from './Root';
 import getRepoUrl from '../helpers/getRepoUrl';
-import { Parragraph, code } from './SimpleStyledComponents';
+import { Parragraph, StyledRouterLink } from './SimpleStyledComponents';
 
 const CreditLine = styled.div`
   color: #A0A0A0;
   font-size: 14px;
   margin-top: 50px;
+  float: right;
 `;
-const MainTitle = styled.h1`
-  font-size: 20px;
-  margin-bottom: 0.5vh;
-`;
-const PageLinkContainer = styled.div`
-  margin: 1vh 0;
-`;
-const linkStyles = css`
-  border-bottom: 1px dotted rgb(0, 168, 0);
-
-  &:hover {
-    border-bottom: 1px solid rgb(0, 168, 0);
-    color: black;
-  }
-  &:active {
-    border-bottom: 1px solid rgb(0, 168, 0);
-    color: black;
-  }
-  &:focus {
-    outline: 2px solid rgb(0, 152, 0);
-    outline-offset: 2px;
-    color: black;
-  }
-`;
-const StyledLink = styled.a`${linkStyles}`;
-const StyledRouterLink = styled(RouterLink)`${linkStyles}`;
 
 function Home() {
-  const repoReadmeLink = text => (
-    <StyledLink
-      href="https://github.com/rafrex/spa-github-pages#readme"
-    >{text}</StyledLink>
-  );
-
   return (
     <Root>
       <MainTitle>Evolución histórica de la Informática</MainTitle>
+      <p style={{ color: '#B0B0B0', textAlign: 'center', fontSize: '0.9em' }}>
+        Final de la materia Aspectos Legales, Profesionales y Sociales de la Informática.
+        Cursada 2015. Carrera de Lic. en Sistemas de la UNRN.
+      </p>
       <Parragraph>
-        This is an example single page app built with React and
-        React&nbsp;Router using {code('browserHistory')}. Navigate
-        with the links below and refresh the page or copy/paste the
-        url to test out the redirect functionality deployed to overcome
-        GitHub&nbsp;Pages incompatibility with single page apps (like this one).
+        <StyledRouterLink to={getRepoUrl('full-history')} primary>
+          <span>Historia completa</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('simple-history')}>
+          <span>Historia reducida</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('robotic-ai')}>
+          <span>Robótica e Inteligencia Artificial</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('crypto-bi')}>
+          <span>Criptografía y BI</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('business')}>
+          <span>Empresas</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('e-comunications')}>
+          <span>Internet y comunicaciones</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('ddbb')}>
+          <span>Bases de datos</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('about')}>
+          <span>Acerca de</span>
+        </StyledRouterLink>
       </Parragraph>
-      <Parragraph>
-        Please see the {repoReadmeLink('repo readme')} for instructions on how to
-        use this boilerplate to deploy your own single page app using GitHub Pages.
-      </Parragraph>
-      <PageLinkContainer>
-        <StyledRouterLink
-          to={getRepoUrl('example')}
-        >Example page</StyledRouterLink>
-      </PageLinkContainer>
-      <PageLinkContainer>
-        <StyledRouterLink
-          to={getRepoUrl('example/two-deep?field1=foo&field2=bar#boom!')}
-        >Example two deep with query and hash</StyledRouterLink>
-      </PageLinkContainer>
       <CreditLine>
-          Code by Luciano Graziani
+          Coded by Luciano Graziani @ v{__VERSION__}
       </CreditLine>
     </Root>
   );
