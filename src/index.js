@@ -12,7 +12,7 @@ import TimelineJS from './components/TimelineJS';
 import PageNotFound from './components/PageNotFound';
 
 const routes = (
-  <Route path="/" component={App}>
+  <Route path="/evolucion-informatica/" component={App}>
     <IndexRoute component={Home} />
 
     <Route
