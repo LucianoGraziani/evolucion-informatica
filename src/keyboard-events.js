@@ -1,7 +1,7 @@
 var stopYoutube = window.utils.stopYoutube;
 var fullScreenVideo = window.utils.fullScreenVideo;
-var advanceSlice = window.advanceSlice;
-var returnSlice = window.returnSlice;
+// var advanceSlice = window.advanceSlice;
+// var returnSlice = window.returnSlice;
 
 function checkKey(e) {
 	e = e || window.event;
