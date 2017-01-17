@@ -1,16 +1,34 @@
 import React, { PropTypes } from 'react';
-// import { Link } from 'react-router';
+
+import { GoBackButton } from './SimpleStyledComponents';
+import getRepoUrl from '../helpers/getRepoUrl';
+import { MainRoot } from './Root';
 
 const propTypes = {
   children: PropTypes.element.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
-function App({ children }) {
+const showBackgroundColor = path => path === '/' || path === '/about';
+
+function App({ children, location }) {
   return (
-    <div>
-      {/* TODO Home button */}
+    <MainRoot home={showBackgroundColor(location.pathname)}>
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          display: location.pathname === '/' ? 'none' : 'inherit',
+          zIndex: 999,
+        }}
+      >
+        <GoBackButton to={getRepoUrl()} primary>
+          <span>Volver</span>
+        </GoBackButton>
+      </div>
       {children}
-    </div>
+    </MainRoot>
   );
 }
 

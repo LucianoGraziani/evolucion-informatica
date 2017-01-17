@@ -10,10 +10,14 @@ const options = {
   language: 'es',
 };
 
-export default class RoboticaIA extends React.Component {
+export default class TimelineJS extends React.Component {
+  static propTypes = {
+    timelineUrl: React.PropTypes.string.isRequired,
+  }
+
   componentDidMount() {
     this.timelineContainer.style.height = getComputedStyle(document.body).height;
-    this.timeline = new TL.Timeline(this.timelineContainer, 'https://docs.google.com/spreadsheets/d/1qMes6fK0yVojJtiGmYLTgF1EE-wMWR35PaZjeFRUW0A/pubhtml', options);
+    this.timeline = new TL.Timeline(this.timelineContainer, this.props.timelineUrl, options);
 
     this.keyboardEvents = keyboardEvents(this.timeline, this.timelineContainer);
     this.resizer = resizeTimeline(this.timeline, this.timelineContainer);
