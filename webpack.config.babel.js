@@ -1,11 +1,13 @@
+import fs from 'fs';
 import webpack from 'webpack';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 export default {
   entry: `${__dirname}/src/index.js`,
   output: {
     path: `${__dirname}/build`,
     publicPath: '/build/',
-    filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle.[chunkhash].js',
+    filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle.[hash].js',
   },
 
   module: {
@@ -19,6 +21,34 @@ export default {
   },
 
   plugins: process.argv.indexOf('-p') === -1 ? null : [
+    new CleanWebpackPlugin(['build'], {
+      root: __dirname,
+      verbose: false,
+      dry: false,
+      exclude: ['bundle.css'],
+    }),
+    function updateHtmlBundleWithHash() {
+      this.plugin('done', (stats) => {
+        const replaceInFile = (filePath, toReplace, replacement) => {
+          const replacer = (match) => {
+            // eslint-disable-next-line
+            console.log('Replacing in %s: %s => %s', filePath, match, replacement);
+            return replacement;
+          };
+          const str = fs.readFileSync(filePath, 'utf8');
+          const out = str.replace(new RegExp(toReplace, 'g'), replacer);
+          fs.writeFileSync(filePath, out);
+        };
+
+        // Build's chunkhash, found in `stats` since build lifecycle is done.
+        const hash = stats.hash;
+
+        replaceInFile(`${__dirname}/index.html`,
+          /bundle-?\w*?\.js/,
+          `bundle-${hash}.js`,
+        );
+      });
+    },
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
