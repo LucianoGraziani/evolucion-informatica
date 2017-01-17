@@ -14,6 +14,11 @@ const showBackgroundColor = path => (
     ? path === '/' || path === '/about'
     : path === '/evolucion-informatica/' || path === '/evolucion-informatica/about'
 );
+const shouldNotShowGoBackButton = path => (
+  process.env.NODE_ENV !== 'production'
+    ? path === '/'
+    : path === '/evolucion-informatica/'
+);
 
 function App({ children, location }) {
   return (
@@ -23,7 +28,7 @@ function App({ children, location }) {
           position: 'absolute',
           top: 0,
           left: 0,
-          display: location.pathname === '/' ? 'none' : 'inherit',
+          display: shouldNotShowGoBackButton(location.pathname) ? 'none' : 'inherit',
           zIndex: 999,
         }}
       >
