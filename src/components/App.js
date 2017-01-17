@@ -9,7 +9,11 @@ const propTypes = {
   location: PropTypes.object.isRequired,
 };
 
-const showBackgroundColor = path => path === '/' || path === '/about';
+const showBackgroundColor = path => (
+  process.env.NODE_ENV !== 'production'
+    ? path === '/' || path === '/about'
+    : path === '/evolucion-informatica/' || path === '/evolucion-informatica/about'
+);
 
 function App({ children, location }) {
   return (
