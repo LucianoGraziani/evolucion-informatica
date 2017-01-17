@@ -7,7 +7,7 @@ export default {
   output: {
     path: `${__dirname}/build`,
     publicPath: '/build/',
-    filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle.[hash].js',
+    filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle-[hash].js',
   },
 
   module: {
