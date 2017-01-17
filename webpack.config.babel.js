@@ -6,7 +6,7 @@ export default {
   entry: `${__dirname}/src/index.js`,
   output: {
     path: `${__dirname}/build`,
-    publicPath: '/build/',
+    publicPath: 'http://lucianograziani.github.io/evolucion-informatica/',
     filename: process.argv.indexOf('-p') === -1 ? 'bundle.js' : 'bundle-[hash].js',
   },
 
