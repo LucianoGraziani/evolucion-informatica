@@ -30,8 +30,11 @@ function Home() {
         <StyledRouterLink to={getRepoUrl('robotic-ai')}>
           <span>Robótica e Inteligencia Artificial</span>
         </StyledRouterLink>
-        <StyledRouterLink to={getRepoUrl('crypto-bi')}>
-          <span>Criptografía y BI</span>
+        <StyledRouterLink to={getRepoUrl('crypto')}>
+          <span>Criptografía</span>
+        </StyledRouterLink>
+        <StyledRouterLink to={getRepoUrl('bi')}>
+          <span>Business Intelligence</span>
         </StyledRouterLink>
         <StyledRouterLink to={getRepoUrl('business')}>
           <span>Empresas</span>
