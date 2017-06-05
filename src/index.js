@@ -40,14 +40,7 @@ const routes = (
       }
     />
     <Route
-      path="crypto"
-      component={() =>
-        <TimelineJS
-          timelineUrl="https://docs.google.com/spreadsheets/d/1ypUXQ54-Ux8FzKA5vzAJgPKdfsRb8rDLWLxm_UHSe0k/pubhtml"
-        />
-      }
-    <Route
-      path="bi"
+      path="crypto-bi"
       component={() =>
         <TimelineJS
           timelineUrl="https://docs.google.com/spreadsheets/d/1M3AY9l4cAJBwoARx6q6rpqLlpOs1HqBmwpbwHUCkE9A/pubhtml"
